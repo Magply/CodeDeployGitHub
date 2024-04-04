@@ -17,7 +17,7 @@ variable "region" {
 }
 
 variable "ami" {
- default = "ami-079ae45378903f993"
+ default = "ami-09a4c4dcdd8ac8acd"
  description = "Amazon Machine Image ID for Amazon Linux 2023"
 }
 
@@ -26,7 +26,7 @@ variable "type" {
  description = "Size of VM"
 }
 
-resource "aws_instance" "Terraform1" {
+resource "aws_instance" "Terraform" {
  ami = var.ami
  instance_type = var.type
 
